@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            padding-bottom: 20px;
+            color: teal;
+        }
+
+        #parent {
+            /* border: solid red; */
+            height: 600px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+
+        #parent>div {
+            /* border: solid blue; */
+            width: 80%;
+            height: 80px;
+            margin: 30px 40px 30px 40px;
+            display: flex;
+            border-radius: 10px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        }
+
+        #parent>div:first-child {
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        #parent>div>div {
+            /* border: solid red; */
+            height: 100%;
+            width: 25%;
+            border-radius: 10px;
+            margin: 0px 10px 0px 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        #parent>div>div:last-child {
+            background-color: black;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #parent>div>div:last-child:p {
+            font-size: 40px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+        #parent>div>div:last-child>p:last-child {
+            color: white;
+            margin: auto;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #parent>div:last-child>div:first-child {
+            background-color: red;
+            font-size: 35px;
+            text-align: center;
+            color: white;
+
+        }
+
+        #parent>div:last-child>div:nth-child(3) {
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 40px;
+            margin: auto;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="parent">
+        <div id="child1"></div>
+        <div>
+            <div>
+                <p>1</p>
+            </div>
+            <div>
+                <p>2</p>
+            </div>
+            <div>
+                <p>3</p>
+            </div>
+            <div>
+                <p>+</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>4</p>
+            </div>
+            <div>
+                <p>5</p>
+            </div>
+            <div>
+                <p>6</p>
+            </div>
+            <div>
+                <p>-</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>7</p>
+            </div>
+            <div>
+                <p>8</p>
+            </div>
+            <div>
+                <p>9</p>
+            </div>
+            <div>
+                <p>x</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>C</p>
+            </div>
+            <div>
+                <p>0</p>
+            </div>
+            <div>
+                <p>=</p>
+            </div>
+            <div>
+                <p>/</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
