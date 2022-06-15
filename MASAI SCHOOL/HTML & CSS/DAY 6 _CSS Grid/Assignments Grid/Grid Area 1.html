@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area 1</title>
+    <style>
+        #parent {
+            width: 40%;
+            padding: 20px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 90px);
+            gap: 20px;
+            grid-template-areas:
+                "a a b b"
+                "c d d d"
+                "e e e e";
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            margin-top: 40px;
+        }
+
+        #parent>div {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        }
+
+        #parent>div:nth-child(1) {
+            background-color: grey;
+            grid-area: a;
+        }
+
+        #parent>div:nth-child(2) {
+            background-color: grey;
+            grid-area: b;
+        }
+
+        #parent>div:nth-child(3) {
+            background-color: grey;
+            grid-area: c;
+        }
+
+        #parent>div:nth-child(4) {
+            background-color: grey;
+            grid-area: d;
+        }
+
+        #parent>div:nth-child(5) {
+            background-color: grey;
+            grid-area: e;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+
+</html>
