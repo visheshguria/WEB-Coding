@@ -1,0 +1,1396 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="public-page">
+<head>
+    <!-- favicon icon -->
+    <link rel="icon" type="image/png" href="https://storage.googleapis.com/lumen5-site-images/favicon/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lumen5 is a video creation platform powered by A.I. that enables anyone without training or experience to easily create engaging video content within minutes.">
+
+    
+    
+<meta property="og:site_name" content="Lumen5 Video Maker | Create Videos Online in Minutes"/>
+    <meta property="og:title" content="Social video marketing made easy. A video maker that turns text into video marketing content in minutes."/>
+    <meta property="og:description" content="Lumen5 is a video creation platform designed for brands and businesses
+    to produce social video content for driving audience engagements online. The platform is powered by artificial
+    intelligence and enables anyone without training or experience to easily create engaging video content within minutes."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://storage.googleapis.com/lumen5-site-images/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta name="facebook-domain-verification" content="yluj57d1xt84v4l5mmhwk0q7e7ixhc" />
+
+    
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    
+
+
+    
+<title>Lumen5 - Video Maker | Create Videos Online in Minutes </title>
+
+
+     <!-- Start of HubSpot Embed Code -->
+     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4012735.js"></script>
+     <!-- End of HubSpot Embed Code -->
+
+    
+    <!-- Google Tag Manager -->
+    
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDS6R2S');</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDS6R2S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 372587568 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-372587568"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'AW-372587568');
+
+
+
+window._GA_TAGS = {
+    
+        ANALYTICS: ['UA-84676949-1', 'G-D5VETH243D'],
+        SEARCH_TRACKER: 'UA-84676949-4',
+    
+};
+
+
+    // The anti-flicker google optimize code:
+    (function () {
+        // Google optimize anti-flicker code includesa style tag, like this:
+        // <style> .async-hide { opacity: 0 !important} </style>
+        // instead, we can just do that in javascript, so that we can keep
+        // that code right next to the Google Optimize code here
+        var head = document.head || document.getElementsByTagName('head')[0];
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        var css = '.async-hide { opacity:0 !important}';
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        }
+        else {
+            style.appendChild(document.createTextNode(css));
+        }
+        head.appendChild(style);
+    })();
+
+    // The actual anti-flicker google optimize code:
+    (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-MBKJSB8':true});
+
+
+</script>
+
+<script src="https://www.googleoptimize.com/optimize.js?id=GTM-MBKJSB8"></script>
+    <script type="text/javascript">
+        /**
+ * This is used to remove keys from the passed object
+ * @param {*} obj : Original object with keys.
+ * @param {*} keys : Keys to be removed 
+ */
+function _objectWithoutProperties(obj, keys) {
+    var target = {};
+    for (var i in obj) {
+        if (keys.indexOf(i) >= 0) continue;
+        if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+        target[i] = obj[i];
+    }
+    return target;
+}
+
+        
+
+
+var SERVER = {
+    URLS: {
+        // current page
+        current_path: '/',
+
+        // general endpoints
+        home: '/',
+        about: '/about/',
+        features: '/features/',
+        careers: '/careers/',
+        career_listings: '/careers/listings/',
+        career_opportunity: '/careers/opportunity/',
+        terms: '/terms/',
+        terms_videoblocks: '/terms-videoblocks/',
+        terms_getty: '/terms-getty/',
+        terms_shutterstock: '/terms-shutterstock/',
+        privacy: '/privacy/',
+        app: '/app/',
+        enterprise: '/enterprise/',
+        enterprise_demo: '/enterprise-demo/',
+        videos: '/api/videos/',
+        url_parse: '/api/url-parse/',
+        user_profile: '/api/user/',
+        change_password: '/auth/password/change/',
+        reset_password: '/auth/password/reset/',
+        forgot_password: '/auth/forgot/',
+        specific_user_profile: function (id) {
+            return '/api/user-profile/PL_ID/'.replace('PL_ID', id);
+        },
+        specific_video: function (id) {
+            return '/api/video/PL_ID/'.replace('PL_ID', id);
+        },
+        new_video: '/api/video/',
+        auto_resize_video: '/api/auto-resize-video/',
+        specific_video_edit: function (id) {
+            return '/api/video/PL_ID/edit/'.replace('PL_ID', id);
+        },
+        specific_video_share: function (id) {
+            return '/api/video/PL_ID/share/'.replace('PL_ID', id);
+        },
+        specific_saved_template_duplicate: function (id) {
+            return '/api/saved_template/PL_ID/duplicate/'.replace('PL_ID', id);
+        },
+        specific_video_translate: function (video_id) {
+            return '/api/video/PL_ID/translate/'.replace('PL_ID', video_id);
+        },
+        video_translated_text : function (video_id) {
+            return '/api/video/PL_ID/translated_text/'.replace('PL_ID', video_id);
+        },
+        video_render_data: function (id) {
+            return '/render/video-render-data/PL_ID/'.replace('PL_ID', id);
+        },
+        estimate_slide_duration: '/api/estimate-slide-duration/',
+        rss_feed_entries: function (feed_id) {
+            return '/api/rss-feeds/FEED_ID/entries/'.replace('FEED_ID', feed_id);
+        },
+        notification_settings: function (user_id, email_uuid) {
+            return '/api/user/notifications/PL_ID/PL_UUID/'.replace('PL_ID', user_id).replace('PL_UUID', email_uuid);
+        },
+        dashboard: '/dashboard/',
+        account: '/dashboard/account/',
+        account_cancel: '/dashboard/account/cancel/',
+        login: '/auth/login/',
+        add_email: '/auth/addemail/',
+        signup: '/auth/signup/',
+        logout: '/auth/logout/',
+        share_video: function (workspace_slug, video_name, video_slug) {
+            return '/user/WORKSPACESLUG/VIDEONAME-VIDEOSLUG/'.replace('WORKSPACESLUG', workspace_slug).replace('VIDEONAME', video_name).replace('VIDEOSLUG', video_slug);
+        },
+        public_video: function (slug) {
+            return '/api/public-video/PL_SLUG/'.replace('PL_SLUG', slug);
+        },
+        done_video: function(slug) {
+            return '/v/PL_SLUG/'.replace('PL_SLUG', slug);
+        },
+        instant_videos: "/dashboard/instant-videos/",
+        analytics: "/dashboard/analytics/",
+        rss_manage: "/dashboard/rss-manage/",
+        rss_feeds: "/api/rss-feeds/",
+        single_rss_feed: function(id) {
+            return "/api/rss-feeds/P_ID/".replace('P_ID', id);
+        },
+        facebook_auth: "/login/facebook/",
+        email_auth_complete: '/complete/email/',
+        sso_auth: "/login/saml/",
+        forgot_submit: '/auth/forgot/submit/',
+        sso_verification_page: '/auth/sso-verification/',
+        download_video: function(video_id) {
+            return "/api/video/PL_ID/share/download/".replace('PL_ID', video_id);
+        },
+        estimated_render_duration: "/api/queue/estimated_render_duration/",
+        video_render_details: function(video_id) {
+            return "/api/queue/video_render_details/PL_ID/".replace('PL_ID', video_id);
+        },
+        generate_storyboard_from_article: '/api/generate_storyboard_from_article/',
+        sentence_highlights: '/api/sentence_highlights/',
+        cancel_rendering_video: function(video_id) {
+            return '/api/cancel-rendering-video/PL_ID/'.replace('PL_ID', video_id);
+        },
+        duplicate_and_edit_video: '/api/duplicate-and-edit-video/',
+        scene_attributes: '/api/scene-attributes/',
+        media_search: '/api/media-search/',
+        assets: '/api/background-assets/',
+        article_media: '/api/article-media/',
+        audio: '/api/audio/',
+        audioasset: function (asset_uuid) {
+            return "/api/audioasset/asset_uuid/".replace('asset_uuid', asset_uuid);
+        },
+        add_extra_data_to_user: "/api/user/extra_data/",
+        upload_urls: "/api/upload-urls/",
+        asset_validation: "/api/asset-validation/",
+        asset_deletion_gcs: "/api/asset-deletion-gcs/",
+        asset_save: "/api/asset-save/",
+        uploads_tag_update: "/api/uploads-tag-update/",
+        uploads_metadata_update: "/api/uploads-metadata-update/",
+        pricing: "/pricing/",
+        special_pricing: "/special-pricing/",
+        current_plan_name: "/api/pricing/current-plan-name/",
+        pricing_plans: "/api/pricing/plans/",
+        subscription: "/api/pricing/subscription/",
+        renew_subscription: "/api/pricing/renew_subscription/",
+        cancellation_feedback: "/api/pricing/cancellation_feedback/",
+        payment_method_status: "/api/pricing/payment_method_status/",
+        credit_card_details: "/api/pricing/credit-card-details/",
+        payment_method_checkout: "/api/pricing/payment-method-checkout/",
+        charges: "/api/billing/charges/",
+        billing_preferences: "/api/billing/preferences/",
+        receipt_subscribers: "/api/billing/subscribers/",
+        fetch_article_image: "/api/fetch_article_image/",
+        task_results: "/api/task-results/",
+        task_result: function(task_id) {
+            return "/api/task-result/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', task_id);
+        },
+        click_logs_query: "/api/clicklogsquery/",
+        click_logs_recommendation: "/api/clicklogsrecommendation/",
+        click_logs_click: "/api/clicklogsclick/",
+        saved_templates_editor: "/dashboard/saved-templates/",
+        saved_templates: "/api/saved-templates/",
+        saved_template: function(id) {
+            return '/api/saved-templates/PL_ID/'.replace('PL_ID', id);
+        },
+        font_assets: "/api/font-assets/",
+        font_assets_detail: function(id) {
+            return "/api/font-assets/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        scene_recommendation: "/api/scene_recommendation/",
+        talking_head_scene_recommendation: "/api/talking_head_scene_recommendation/",
+        media_transcript: function(asset_id) {
+            return "/api/media-transcript/PL_ID/".replace('PL_ID', asset_id);
+        },
+        send_team_invite: function(id) {
+            return "/api/send-team-invite/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        team_members: "/api/team-members/",
+        team_size: "/api/team-size/",
+        regenerate_mfa_backup_keys: "/api/regenerate_mfa_backup_keys/",
+        send_mfa_recovery_code: "/api/send-mfa-recovery-code/",
+        merge_teams: "/api/merge-teams/",
+        team_member_detail: function(id) {
+            return "/api/team-members/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        workspace_team_members: "/api/workspace-team-members/",
+        team_invitations: "/api/team-invitations/",
+        team_invitation_detail: function(id) {
+            return "/api/team-invitations/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        workspaces: "/api/workspaces/",
+        workspaces_detail: function(id) {
+            return "/api/workspaces/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        workspace_members: function(id) {
+            return "/api/workspace-members/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        change_workspace: function(id) {
+            return "/api/change-workspace/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        projects: "/api/projects/",
+        project_detail: function(id) {
+            return "/api/projects/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        project_videos: function(id) {
+            return "/api/videos/project/PLACEHOLDER_ID".replace('PLACEHOLDER_ID', id);
+        },
+        duplicate_videos: "/api/videos/duplicate_videos",
+        delete_videos: "/api/videos/delete_videos",
+        move_videos: "/api/videos/move_videos",
+        media_folders: "/api/media-folders/",
+        media_folders_detail: function(id) {
+            return "/api/media-folders/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        random_tip: "/api/random-tip/",
+        search_bing_news: "/api/search-bing-news/",
+        report_media_asset: "/api/report-media-asset/",
+        premium_media: "/api/pricing/premium-media/",
+        premium_media_credit_check: "/api/premium-media-credit-check/",
+        onboarding_survey_options: "/api/onboarding-survey/options/",
+        onboarding_survey_submission: "/api/onboarding-survey/submission/",
+        recommend_search_terms: "/api/recommend-search-terms/",
+        recommend_highlights: "/api/recommend-highlights/",
+        get_text_direction: "/api/get-text-direction",
+        favorites: "/api/favorites/",
+        analytics_api: "/api/analytics_mvp/",
+        affiliate_setup: "/api/affiliate-setup/",
+        create_auto_voiceover: "/api/create_auto_voiceover/",
+        check_stack_commerce_code: function(coupon_code) {
+            return "/api/check-stack-commerce-code/PLACEHOLDER_COUPON_CODE/".replace('PLACEHOLDER_COUPON_CODE', coupon_code);
+        },
+        video_search_by_title: '/api/video_search_by_title/',
+        video_comments: '/api/video_comments/',
+        resolve_comments: '/api/resolve_comments/',
+        send_scene_comment_mention_email: "/api/send_scene_comment_mention_email/",
+        get_projects_for_user: '/api/user/user-profile-projects',
+        email_exists: '/api/email-exists/',
+        sso_verification: '/api/sso-verfication/',
+        update_article: '/api/update_article/',
+        delete_account: '/api/delete-account/',
+        team_settings: '/api/team-settings/',
+        two_factor_authentication: '/api/two-factor-authentication/',
+        social_complete: function(backend) {
+            return "/complete/backend/".replace('backend', backend);
+        },
+        brand_kits: "/api/brand-kits/",
+        brand_kits_page: "/dashboard/brand-kits/",
+        public_video_members: "/api/public_video_members/",
+        imageasset: function (asset_uuid) {
+            return "/api/imageasset/asset_uuid/".replace('asset_uuid', asset_uuid);
+        },
+        team_brand_kit_onboarding: "/api/team-brand-kit-onboarding/",
+        templates: "/api/templates/",
+        template_detail: function(id) {
+            return "/api/templates/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        template_display_groups: function(id) {
+            return "/api/templates/PLACEHOLDER_ID/display-groups/".replace('PLACEHOLDER_ID', id);
+        },
+        template_categories: "/api/template-categories/",
+        template_category_detail: function(id) {
+            return "/api/template-categories/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        scene_designs: "/api/scene-designs/",
+        scene_design_detail: function(id) {
+            return "/api/scene-designs/PLACEHOLDER_ID/".replace('PLACEHOLDER_ID', id);
+        },
+        recently_used_templates: "/api/recently_used_templates/",
+        video_approval_status: function(video_id) {
+            return "/api/video/PLACEHOLDER_ID/approvalstatus/".replace('PLACEHOLDER_ID', video_id);
+        }
+    },
+    CSRF: {
+        TOKEN: 'WgUhmkiAFq6DweJmiJyxOsvhuA9vVXKHoIyY9f3wvbyXiFkIzYSXbKwjwfQ8Wzz1',
+    },
+    
+        ANALYTICS: null,
+        USER: null,
+    
+    DEBUG: false,
+    MOCK_ENVIRONMENT: false,
+    VERSION: 'a77a47a6d968d8d6c79dc7297c1051c9b0f8cb59',
+    STRIPE_PUBLISHABLE_KEY: 'pk_live_ATdsxNCXWTkY3HJybTTTE6bC',
+    TRANSPARENT_URL: 'https://storage.googleapis.com/lumen5-prod-images/invisible.png',
+    BLACK_SQUARE_URL: 'https://storage.googleapis.com/lumen5-prod-images/black.jpg',
+    WHITE_SQUARE_URL: 'https://storage.googleapis.com/lumen5-prod-images/white.jpg',
+    SCRIPT_ARTICLE_URL: 'https://storage.googleapis.com/lumen5-site-css/start_from_scratch_editable_story_tab.html?start=script',
+    SCRATCH_ARTICLE_URL: 'https://storage.googleapis.com/lumen5-site-css/start_from_scratch_editable_story_tab.html',
+    EMPTY_ARTICLE_URL: 'https://storage.googleapis.com/lumen5-site-css/start_from_nothing.html',
+    VALID_SYMBOLS_FOR_PASSWORDS: ',.<>/?;:PLACEHOLDER"[]\\}{|=+-_()*&^%#@!~`$£€'.replace('PLACEHOLDER', "'"),
+    
+}
+
+        
+        // hubspot javascript API
+
+// use a different setup depending on our use case
+
+    
+    var _hsq = {
+        push: function (evt) {
+            // format of the push : _hsq.push(["identify",data]);
+            let name = evt[0];
+            let data = evt[1];
+            // Do nothing 
+        }
+    };
+    window._hsq = _hsq;
+
+
+
+        // mixpanel javascript API
+
+// use a different setup depending on our use case
+
+    
+    const mixpanel = {
+        init: function () {},
+        track: function (event_name, event_data, callback) {
+            window.setTimeout(function() {
+                console.info('analytics.track stubbed:', event_name, event_data);
+                if (callback) {
+                    callback();
+                }
+            }, 0);
+        },
+        identify: function () {},
+        register: function () {},
+        people: {
+            set: function () {},
+            set_once: function () {},
+        },
+        __loaded: true,
+    };
+
+
+        /*
+ * Mixpanel charges us per tracked user, so we only track users that login and not users who visit
+ * one of our public pages but doesn't create an account.  This is great except when we want to
+ * measure the impact of a marketing campaign/ads and UTM parameters are important for attributing
+ * the user/visit to a particular source.  Instead of just losing that information, including
+ * this script will set the UTM parameters to a local cookie which will then be sent to Mixpanel
+ * by our system.  This will ensure we preserve basic UTM tracking for logged out users without
+ * sending data to Mixpanel unnecessarily.  This script should automatically be included into
+ * all pages on the site that this repo controls.  For other pages (such as the blog) please
+ * use a CDN version of this script available at:
+ * https://storage.googleapis.com/lumen5-site-js/mixpanel-utm-tracking.js
+ *
+ * Because we need to support a CDN version of this script, we must ensure that this script is
+ * fully self-contained with no dependencies and also fully ES3 compatible (it isn't transpiled).
+ */
+
+!function () {
+    try {
+        // minified Cookie library from https://github.com/js-cookie/js-cookie
+        !function (e) {
+            var n;
+            if ("function" == typeof define && define.amd && (define(e), n = !0), "object" == typeof exports && (module.exports = e(), n = !0), !n) {
+                var t = window.Cookies, o = window.Cookies = e();
+                o.noConflict = function () {
+                    return window.Cookies = t, o
+                }
+            }
+        }(function () {
+            function e() {
+                for (var e = 0, n = {}; e < arguments.length; e++) {
+                    var t = arguments[e];
+                    for (var o in t) n[o] = t[o]
+                }
+                return n
+            }
+
+            function n(e) {
+                return e.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent)
+            }
+
+            return function t(o) {
+                function r() {
+                }
+
+                function i(n, t, i) {
+                    if ("undefined" != typeof document) {
+                        "number" == typeof (i = e({path: "/"}, r.defaults, i)).expires && (i.expires = new Date(1 * new Date + 864e5 * i.expires)), i.expires = i.expires ? i.expires.toUTCString() : "";
+                        try {
+                            var c = JSON.stringify(t);
+                            /^[\{\[]/.test(c) && (t = c)
+                        } catch (e) {
+                        }
+                        t = o.write ? o.write(t, n) : encodeURIComponent(String(t)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent), n = encodeURIComponent(String(n)).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent).replace(/[\(\)]/g, escape);
+                        var f = "";
+                        for (var u in i) i[u] && (f += "; " + u, !0 !== i[u] && (f += "=" + i[u].split(";")[0]));
+                        return document.cookie = n + "=" + t + f
+                    }
+                }
+
+                function c(e, t) {
+                    if ("undefined" != typeof document) {
+                        for (var r = {}, i = document.cookie ? document.cookie.split("; ") : [], c = 0; c < i.length; c++) {
+                            var f = i[c].split("="), u = f.slice(1).join("=");
+                            t || '"' !== u.charAt(0) || (u = u.slice(1, -1));
+                            try {
+                                var a = n(f[0]);
+                                if (u = (o.read || o)(u, a) || n(u), t) try {
+                                    u = JSON.parse(u)
+                                } catch (e) {
+                                }
+                                if (r[a] = u, e === a) break
+                            } catch (e) {
+                            }
+                        }
+                        return e ? r[e] : r
+                    }
+                }
+
+                return r.set = i, r.get = function (e) {
+                    return c(e, !1)
+                }, r.getJSON = function (e) {
+                    return c(e, !0)
+                }, r.remove = function (n, t) {
+                    i(n, "", e(t, {expires: -1}))
+                }, r.defaults = {}, r.withConverter = t, r
+            }(function () {
+            })
+        });
+
+
+        // querystring code, to extract querystring parameters from URL
+        var UTMQuerystring = (function () {
+            // This function is anonymous, is executed immediately and
+            // the return value is assigned to QueryString!
+            var query_string = {};
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+
+                var key = pair[0];
+                var value = decodeURIComponent(pair.slice(1).join('='));
+
+                // If first entry with this name
+                if (typeof query_string[key] === 'undefined') {
+                    query_string[key] = value;
+                    // If second entry with this name
+                } else if (typeof query_string[key] === 'string') {
+                    query_string[pair[0]] = [query_string[key], value];
+                    // If third or later entry with this name
+                } else {
+                    query_string[pair[0]].push(value);
+                }
+            }
+            return query_string;
+        }());
+
+        // for each UTM parameter, set if present
+        var utms = [
+            'utm_source',
+            'utm_medium',
+            'utm_campaign',
+            'utm_content',
+            'utm_term'
+        ];
+        var did_find = false;
+        for (var utm_index = 0; utm_index < utms.length; utm_index++) {
+            var utm = utms[utm_index];
+            if (UTMQuerystring[utm] != undefined) {
+                did_find = true;
+                break;
+            }
+        }
+        // if ANY UTM value is set, set them ALL (keys not present should be sent to blank)
+        if (did_find) {
+            for (var utm_index = 0; utm_index < utms.length; utm_index++) {
+                var utm = utms[utm_index];
+                if (UTMQuerystring[utm] != undefined) {
+                    Cookies.set(utm, UTMQuerystring[utm], { expires: 365 });
+                }
+                else {
+                    Cookies.set(utm, '', { expires: 365 });
+                }
+            }
+        }
+    } catch (e) {
+        console.warn(e);
+    }
+}();
+
+        /**
+ * This file loads the Crisp chat bubble in the bottom right of the screen (see https://crisp.chat for more info).
+ */
+
+
+
+    
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "7cce1b1c-0b05-4ea8-a052-750220d4a1fc";
+
+    if (SERVER.ANALYTICS && SERVER.ANALYTICS.email_secret_uuid) {
+        window.CRISP_TOKEN_ID = SERVER.ANALYTICS.email_secret_uuid;
+    }
+
+    (function(){
+        var d = document;
+        var s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+
+
+
+        /***
+ * This code loads tracking analytics for various places we send events.  It nominally is a replacement for Segment
+ * and has some similarities to Segment's API.
+ *
+ * Once it has been initialized, simply call analytics.track(event_name, event_data_map) and the event will
+ * be propogated to Mixpanel, Crisp, Google Analytics, etc.
+ *
+ * We want to distinguish events by video for easy categorization & aggregation in Mixpanel, so once a video
+ * is loaded we should call "setVideoIdContext" ASAP.  All following events will be tagged with that video_id.
+ */
+
+ /**
+  * New Addition: Hubspot tracking
+  * Note:
+  * For Hubspot events you cannot pass dynamic key-value pair.
+  * There is a 1-1 mapping of contact ( user ) properties and event properties.
+  * Events are just random triggers that can update contact properties.
+  * Events name can be dynamic and hubspot can create them on the fly.
+  * When making an event please confirm the property id/name from Marketing Team.
+  * Helper links
+  * https://developers.hubspot.com/docs/api/events/tracking-code
+  * https://app.hubspot.com/property-settings/  : to see all the property names
+  *
+  */
+
+!function () {
+    // minified Cookie library from https://github.com/js-cookie/js-cookie
+!function (e) {
+    var n;
+    if ("function" == typeof define && define.amd && (define(e), n = !0), "object" == typeof exports && (module.exports = e(), n = !0), !n) {
+        var t = window.Cookies, o = window.Cookies = e();
+        o.noConflict = function () {
+            return window.Cookies = t, o
+        }
+    }
+}(function () {
+    function e() {
+        for (var e = 0, n = {}; e < arguments.length; e++) {
+            var t = arguments[e];
+            for (var o in t) n[o] = t[o]
+        }
+        return n
+    }
+
+    function n(e) {
+        return e.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent)
+    }
+
+    return function t(o) {
+        function r() {
+        }
+
+        function i(n, t, i) {
+            if ("undefined" != typeof document) {
+                "number" == typeof (i = e({path: "/"}, r.defaults, i)).expires && (i.expires = new Date(1 * new Date + 864e5 * i.expires)), i.expires = i.expires ? i.expires.toUTCString() : "";
+                try {
+                    var c = JSON.stringify(t);
+                    /^[\{\[]/.test(c) && (t = c)
+                } catch (e) {
+                }
+                t = o.write ? o.write(t, n) : encodeURIComponent(String(t)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent), n = encodeURIComponent(String(n)).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent).replace(/[\(\)]/g, escape);
+                var f = "";
+                for (var u in i) i[u] && (f += "; " + u, !0 !== i[u] && (f += "=" + i[u].split(";")[0]));
+                return document.cookie = n + "=" + t + f
+            }
+        }
+
+        function c(e, t) {
+            if ("undefined" != typeof document) {
+                for (var r = {}, i = document.cookie ? document.cookie.split("; ") : [], c = 0; c < i.length; c++) {
+                    var f = i[c].split("="), u = f.slice(1).join("=");
+                    t || '"' !== u.charAt(0) || (u = u.slice(1, -1));
+                    try {
+                        var a = n(f[0]);
+                        if (u = (o.read || o)(u, a) || n(u), t) try {
+                            u = JSON.parse(u)
+                        } catch (e) {
+                        }
+                        if (r[a] = u, e === a) break
+                    } catch (e) {
+                    }
+                }
+                return e ? r[e] : r
+            }
+        }
+
+        return r.set = i, r.get = function (e) {
+            return c(e, !1)
+        }, r.getJSON = function (e) {
+            return c(e, !0)
+        }, r.remove = function (n, t) {
+            i(n, "", e(t, {expires: -1}))
+        }, r.defaults = {}, r.withConverter = t, r
+    }(function () {
+    })
+});
+
+
+    var analytics = window.analytics = window.analytics || [];
+
+    if (!analytics.initialize) {
+        analytics.initialize = true;
+        analytics.identified = false;
+        analytics.hubspotIdentified = false;
+
+        analytics.video_id = undefined;  // the default value until setVideoIdContext is called
+
+        analytics.identify = function () {
+            if (mixpanel.__loaded) {
+                if (
+                    Object.prototype.hasOwnProperty.call(window, '_GOOGLE_ANALYTICS_CONTENT_GROUP') &&
+                    window._GOOGLE_ANALYTICS_CONTENT_GROUP.group &&
+                    window._GOOGLE_ANALYTICS_CONTENT_GROUP.name
+                ) {
+                    gtag('set', {
+                        [window._GOOGLE_ANALYTICS_CONTENT_GROUP.group]: window._GOOGLE_ANALYTICS_CONTENT_GROUP.name,
+                    });
+                }
+
+                if (SERVER.ANALYTICS) {
+                    // google analytics
+                    gtag('set', {
+                        'userId': SERVER.ANALYTICS.id,
+                    });
+
+                    // mixpanel
+                    // mixpanel requires some special fields to be prepended with "$"
+                    var mixpanel_data = _objectWithoutProperties(
+                        SERVER.ANALYTICS,
+                        ['id', 'username', 'name', 'first_name', 'last_name', 'email', 'created']
+                    );
+                    mixpanel_data['$username'] = SERVER.ANALYTICS['username'];
+                    mixpanel_data['$name'] = SERVER.ANALYTICS['name'];
+                    mixpanel_data['$first_name'] = SERVER.ANALYTICS['first_name'];
+                    mixpanel_data['$last_name'] = SERVER.ANALYTICS['last_name'];
+                    mixpanel_data['$email'] = SERVER.ANALYTICS['email'];
+                    mixpanel_data['$created'] = SERVER.ANALYTICS['created'];
+                    // parse UTM parameters if set in the cookie
+                    var first_touch_utm = {};
+                    var super_properties = {};
+                    var last_touch_utm = {};
+                    var utms = [
+                        'utm_source',
+                        'utm_medium',
+                        'utm_campaign',
+                        'utm_content',
+                        'utm_term'
+                    ];
+                    for (var utm_index = 0; utm_index < utms.length; utm_index++) {
+                        var utm = utms[utm_index];
+                        var value = ''; // default is blank
+                        if (Cookies.get(utm) != undefined) {
+                            value = Cookies.get(utm);
+                        }
+                        first_touch_utm[utm + ' [first touch]'] = value;
+                        mixpanel_data[utm + ' [last touch]'] = value;
+                        super_properties[utm + ' [last touch]'] = value;
+                        last_touch_utm[utm + ' [last touch]'] = value;
+                    }
+                    mixpanel.identify(SERVER.ANALYTICS.id);
+                    mixpanel.people.set(mixpanel_data);
+                    mixpanel.people.set_once(first_touch_utm);
+                    mixpanel.register(super_properties); // registering means all events will have these "super properties" set
+
+                    // Crisp
+                    if (window.$crisp) {
+                        $crisp.push(["safe", true]);
+                        $crisp.push(["set", "user:email", [SERVER.ANALYTICS['email'], SERVER.USER['crisp_identity_signature']]]);
+                        $crisp.push(["set", "user:nickname", [SERVER.ANALYTICS['name']]]);
+                        $crisp.push(["set", "user:avatar", [SERVER.ANALYTICS['photo_url']]]);
+                        $crisp.push(["set", "session:data", [
+                            [
+                                ["created_at", new Date(SERVER.ANALYTICS['created']).getTime()],
+                                ["user_id", SERVER.ANALYTICS.id],
+                                ["plan_name", SERVER.ANALYTICS.plan_name],
+                                ["video_count", SERVER.ANALYTICS.video_count],
+                                ["downloaded_video_count", SERVER.ANALYTICS.downloaded_video_count],
+                                ["saved_template_count", SERVER.ANALYTICS.saved_template_count],
+                                ["business_name", SERVER.ANALYTICS.business_name],
+                                ["first_name", SERVER.ANALYTICS.first_name],
+                                ["industry", SERVER.ANALYTICS.industry],
+                                ["last_name", SERVER.ANALYTICS.last_name],
+                                ["referrer", SERVER.ANALYTICS.referrer],
+                                ["team_size", SERVER.ANALYTICS.team_size],
+                                ["username", SERVER.ANALYTICS.username],
+                                ["workspace_count", SERVER.ANALYTICS.workspace_count],
+                            ]
+                        ]]);
+                    }
+
+                    // Hubspot
+                    if(window._hsq) {
+                        var hubspot_data = _objectWithoutProperties(
+                            SERVER.ANALYTICS,
+                            ["saved_template_count", "business_name", "created",
+                            "downloaded_video_count", "email_secret_uuid", "first_name",
+                            "id", "industry", "last_login", "last_name",
+                            "name", "plan_name",
+                            "referrer", "team_size", "unsub_newsletter",
+                            "unsub_notification", "unsub_render", "unsub_support",
+                            "unsub_template", "unsub_training", "username",
+                            "video_count", "workspace_count"]
+                        );
+                        hubspot_data['lumen5_account_create_date'] = new Date(SERVER.ANALYTICS['created']).getTime();
+                        hubspot_data['firstname'] = SERVER.ANALYTICS['first_name'];
+                        hubspot_data['lumen5_initial_referrer'] = SERVER.ANALYTICS['referrer'];
+                        hubspot_data['lastname'] = SERVER.ANALYTICS['last_name'];
+                        hubspot_data['lumen5_downloaded_video_count'] = SERVER.ANALYTICS['downloaded_video_count'];
+                        hubspot_data['lumen5_plan_name'] = SERVER.ANALYTICS['plan_name'];
+                        hubspot_data['lumen5_video_count'] = SERVER.ANALYTICS['video_count'];
+
+                        if(SERVER.ANALYTICS['unsub_newsletter']) {
+                            hubspot_data['hs_email_optout_10619513'] = SERVER.ANALYTICS['unsub_newsletter']
+                        }
+
+                        if(SERVER.ANALYTICS['unsub_training']) {
+                            hubspot_data['hs_email_optout_10619656'] = SERVER.ANALYTICS['unsub_training']
+                        }
+
+                        // parse UTM parameters if set in the cookie
+                        var first_touch_utm = {};
+                        var super_properties = {};
+                        var last_touch_utm = {};
+                        var utms = [
+                            'utm_campaign',
+                            'utm_medium',
+                            'utm_source',
+                        ];
+                        for (var utm_index = 0; utm_index < utms.length; utm_index++) {
+                            var utm = utms[utm_index];
+                            var value = ''; // default is blank
+                            if (Cookies.get(utm) != undefined) {
+                                value = Cookies.get(utm);
+                            }
+                            // format of the property : `lumen5_utm_campaign_first_touch`
+                            hubspot_data['lumen5_'+utm+'_last_touch'] = value;
+                        }
+
+                        try {
+                            /**
+                             * If you want to test the event, set the test user email address below.
+                             * hubspot_data.email = "api-test@lumen5.com"; // test user.
+                             */
+                            _hsq.push(["identify",hubspot_data]);
+                            _hsq.push(["trackEvent", {id: "contact_identity_update"}]);
+                            analytics.hubspotIdentified = true;
+                        } catch (error) {
+                            console.log('unable to identify and push event to hubspot');
+                        }
+                    }
+                }
+                else {
+                    console.log('No server data available. Unable to identify')
+                }
+                analytics.identified = true;
+            }
+            else {
+                if (analytics._willNeverLoad()) {
+                    // give up. The analytics aren't loading.
+                    // Maybe the user has adblock of some kind.
+                }
+                else {
+                    setTimeout(analytics.identify, 100);
+                }
+            }
+        };
+
+        analytics.track = function (event_name, event_data_dict, callback) {
+            if (analytics.identified && mixpanel.__loaded) {
+                var ga_finished = false;
+                var mixpanel_finished = false;
+                var called_callback = false;
+
+                var call_callback = function (force) {
+                    if (called_callback === true) {
+                        return;
+                    }
+                    if (callback && force === true) {
+                        if (typeof callback !== 'function') {
+                            console.warn('callback should be a function, got', callback);
+                            return;
+                        }
+                        called_callback = true;
+                        callback();
+                    }
+                    if (callback && ga_finished === true && mixpanel_finished === true) {
+                        if (typeof callback !== 'function') {
+                            console.warn('callback should be a function, got', callback);
+                            return;
+                        }
+                        called_callback = true;
+                        callback();
+                    }
+                };
+
+                // update the event_data_dict with the video_id context
+                if (event_data_dict) {
+                    event_data_dict['video_id'] = analytics.video_id;
+                }
+                else {
+                    event_data_dict = {'video_id': analytics.video_id};
+                }
+                gtag('event', event_name, {
+                    'event_callback': function() {
+                        ga_finished = true;
+                        call_callback(false);
+                    },
+                });
+                mixpanel.track(event_name, event_data_dict, function () {
+                    mixpanel_finished = true;
+                    call_callback(false);
+                });
+
+                // set a timeout for 1.5s just in case ga and mixpanel maybe
+                // don't succeed and their callbacks never fire.
+                setTimeout(function () {
+                    call_callback(true);
+                }, 1500);
+            }
+            else {
+                if (analytics._willNeverLoad()) {
+                    // the analytics aren't loading. Just call the callback to make
+                    // sure that anything that needs to happen does happen.
+                    if (callback) {
+                        if (typeof callback !== 'function') {
+                            console.warn('callback should be a function, got', callback);
+                            return;
+                        }
+                        callback();
+                    }
+                }
+                else {
+                    setTimeout(analytics.track, 100, event_name, event_data_dict, callback);
+                }
+            }
+        };
+
+        analytics.trackHSEvent = function (eventName, contactProperties, callback) {
+            if (analytics.hubspotIdentified = true && window._hsq) {
+                var hubspotFinished = false;
+                var called_callback = false;
+
+                var call_callback = function (force) {
+                    if (called_callback === true) {
+                        return;
+                    }
+                    if (callback && force === true) {
+                        if (typeof callback !== 'function') {
+                            console.warn('callback should be a function, got', callback);
+                            return;
+                        }
+                        called_callback = true;
+                        callback();
+                    }
+                    if (callback && hubspotFinished === true) {
+                        if (typeof callback !== 'function') {
+                            console.warn('callback should be a function, got', callback);
+                            return;
+                        }
+                        called_callback = true;
+                        callback();
+                    }
+                };
+
+
+                try {
+                    /**
+                     * If you want to test the event, use test user email address.
+                        contactProperties['email'] = "api-test@lumen5.com" // test user.
+                     */
+                    contactProperties['email'] = SERVER.ANALYTICS['email'];
+                    _hsq.push(["identify",contactProperties]);
+                    _hsq.push(["trackEvent", {
+                        id: eventName,
+                    }]);
+                    hubspotFinished = true;
+                    call_callback(false);
+                } catch (error) {
+                    call_callback(true);
+                }
+            }
+            else {
+                // the analytics aren't loading. Just call the callback to make
+                // sure that anything that needs to happen does happen.
+                if (callback) {
+                    if (typeof callback !== 'function') {
+                        console.warn('callback should be a function, got', callback);
+                        return;
+                    }
+                    callback();
+                }
+            }
+        };
+
+        analytics.trackSignUp = function () {
+            // NOTE: we can't track signup events that require user login (mixpanel, etc)
+            //       because the analytics context was initialized while no user was
+            //       setup so the events will be anonymous.
+
+            // send facebook event
+            try {
+                fbq('track', 'CompleteRegistration');
+            }
+            catch (e) {}
+
+            // send google adwords event
+            try {
+                gtag('event', 'sign_up', {
+                    'send_to': 'AW-835353444/52nqCK2p15MBEOT2qY4D',
+                });
+            }
+            catch (e) {}
+
+            // send google tag manager custom event
+            try {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'registrationComplete'
+                });
+            }
+            catch (e) {}
+
+            // send the second google event
+            try {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-372587568/iWwOCKn9hpICELD41LEB'
+                })
+            }
+            catch (e) {}
+        };
+
+        analytics.page = function () {
+            if (analytics.identified && mixpanel.__loaded && window.$crisp) {
+                window._GA_TAGS.ANALYTICS.forEach(function(tag) {
+                    gtag('config', tag);
+                });
+                gtag('event', 'page_view', { 'send_to': window._GA_TAGS.SEARCH_TRACKER });
+
+                mixpanel.track('Loaded a Page')
+                /*
+                We want to load the following code only on dashboard or creator pages / subpages.
+                */
+                
+
+                $crisp.push(["set", "session:event", [[["page-loaded-" + window.location.pathname, {}, "grey"]]]]);
+            }
+            else {
+                setTimeout(analytics.page, 100)
+            }
+        };
+
+        analytics.setVideoIdContext = function (video_id) {
+            /*
+            We want to be able to "group" events by the video they correspond to, but immediately on page load
+            when the above code is initialized we don't have the video_id defined yet.  Once we get the video_id
+            (the video is created or fetched) the code should call this method so that all future events are
+            tagged with the correct video_id.
+             */
+            analytics.video_id = video_id;
+        };
+
+        // our search uses AJAX - this endpoint is to send events
+        // (not virtual pageviews) for click metrics to Google Analytics
+        analytics._trackSearchEvent = function (event_action, event_label, event_value) {
+            var event_category = 'Search';
+            gtag('event', event_action, {
+                'send_to': window._GA_TAGS.SEARCH_TRACKER,
+                'event_value': event_value,
+                'event_category': event_category,
+                'event_label': event_label,
+            });
+        };
+
+        analytics.trackSearchClick = function(search_tab, depth) {
+            analytics._trackSearchEvent('Click', search_tab, depth);
+        };
+
+        analytics.trackSearchDrag = function(search_tab, depth) {
+            analytics._trackSearchEvent('Drag', search_tab, depth);
+        };
+
+        analytics.trackSearchDragFirstPage = function(search_tab, depth) {
+            analytics._trackSearchEvent('DragFirstPage', search_tab, depth);
+        };
+
+        analytics.trackSearchApply = function(search_tab, depth) {
+            analytics._trackSearchEvent('Apply', search_tab, depth);
+        };
+
+        analytics.trackSearchApplyFirstPage = function(search_tab, depth) {
+            analytics._trackSearchEvent('ApplyFirstPage', search_tab, depth);
+        };
+
+        // our search uses AJAX - this endpoint is to send virtual pageviews
+        // to Google Analytics so we can use Site Search analytics
+        analytics.trackSearch = function(url) {
+            var virtual_page = '';
+            if (url.indexOf('premium') > -1) {
+                virtual_page = 'premium';
+            }
+            else if (url.indexOf('media') > -1) {
+                virtual_page = 'media';
+            }
+            if (virtual_page.length === 0) {
+                return;
+            }
+            gtag('event', 'page_view', {
+                'send_to': window._GA_TAGS.SEARCH_TRACKER,
+                'event_value': url,
+                'dimension1': virtual_page, // dimension1 is searchPage
+            });
+        };
+
+        analytics.trackSearchAction = function(url) {
+            var virtual_page = '';
+            if (url.indexOf('premium') > -1) {
+                virtual_page = 'premium';
+            }
+            else if (url.indexOf('media') > -1) {
+                virtual_page = 'media';
+            }
+            if (virtual_page.length === 0) {
+                return;
+            }
+            gtag('event', 'page_view', {
+                'send_to': window._GA_TAGS.SEARCH_TRACKER,
+                'event_value': url,
+                'dimension1': virtual_page, // dimension1 is searchPage
+            });
+        };
+
+        analytics._startupTime = new Date();
+        analytics._willNeverLoad = function() {
+            if (analytics.identified && mixpanel.__loaded) {
+                return false; // we have already loaded!
+            }
+            var now = new Date();
+            var time_since_initialized = (now.getTime() - analytics._startupTime.getTime()) / 1000;
+            return time_since_initialized > 5;
+        };
+    }
+    else {
+        window.console && console.error && console.error("Analytics snippet included twice.");
+    }
+
+    // identify user to google analytics and mixpanel
+    analytics.identify();
+
+    // send page event
+    analytics.page();
+}();
+
+        /*
+This file does a couple things:
+
+- checks if the CJEVENT param is set on any page, and stores the result in a cookie
+- provides 
+*/
+(function () {
+    var CJ_EVENT_COOKIE_NAME = 'CJ_EVENT';
+    var CJ_COOKIE_LIFETIME = 30; // days
+
+    function sendBeacon(cj_event_data) {
+        var deferred = $.Deferred();
+
+        deferred.then(function (user_id) {
+            if (!user_id) {
+                return;
+            }
+
+            var cj_iframe = document.createElement('iframe');
+            cj_iframe.width = "1";
+            cj_iframe.height = "1";
+            cj_iframe.frameBorder="0";
+            cj_iframe.scrolling = "no";
+            cj_iframe.name = "cj_conversion";
+            cj_iframe.src = "https://www.emjcd.com/tags/c?containerTagId=35966&TYPE=418665&CID=1558757&AMOUNT=0&OID=" + user_id + "&DISCOUNT=0&CURRENCY=USD&COUPON=&CJEVENT=" + cj_event_data.cjevent;
+            document.body.appendChild(cj_iframe);            
+        });
+
+        if (SERVER && SERVER.USER && SERVER.USER.id) {
+            deferred.resolve(SERVER.USER.id);
+        }
+        else {
+            $.ajax({
+                url: '/api/user/',
+                method: 'GET',
+                beforeSend: function (request) {
+                    request.setRequestHeader('X-CSRFToken', SERVER.CSRF.TOKEN);
+                },
+                success: function (data) {
+                    deferred.resolve(data.user.id);
+                },
+                error: function () {
+                    deferred.resolve(null);
+                },
+            });
+        }
+
+        return deferred.promise();
+    }
+
+    function recordAffiliateReferral(cj_event_data) {
+        var deferred = $.Deferred();
+        $.ajax({
+            url: SERVER.URLS.affiliate_setup,
+            method: 'POST',
+            data: {
+                referral_date: Math.round(cj_event_data.date.getTime() / 1000),
+                cjevent: cj_event_data.cjevent,
+                pid: cj_event_data.pid,
+                aid: cj_event_data.aid,
+            },
+            beforeSend: function (request) {
+                request.setRequestHeader('X-CSRFToken', getCookie('csrftoken'));
+            },
+            success: function () {
+                deferred.resolve();
+            },
+            error: function () {
+                deferred.resolve();
+            },
+        });
+        return deferred.promise();
+    }
+
+    function setCJEventCookie() {
+        var cjevent_val = getParameterByName('cjevent');
+        // these variables are defined here: https://developers.cj.com/docs/data-imports/action-data
+        var cj_pid = getParameterByName('utm_content');
+        var cj_aid = getParameterByName('utm_term');
+        if (cjevent_val) {
+            setCookie(CJ_EVENT_COOKIE_NAME, JSON.stringify({
+                cjevent: cjevent_val,
+                pid: cj_pid,
+                aid: cj_aid,
+                date: new Date(),
+            }), CJ_COOKIE_LIFETIME);
+        }
+    }
+    setCJEventCookie();
+
+    function getCJEventCookie() {
+        var cookie_data = getCookie(CJ_EVENT_COOKIE_NAME);
+        if (!cookie_data) {
+            return null;
+        }
+
+        var parsed_data = JSON.parse(cookie_data);
+
+        // after parsing the json string, the date has not
+        // been converted into a proper datetime, it will just
+        // be a string. This is what converts it to a real
+        // date-type object:
+        parsed_data.date = new Date(parsed_data.date);
+        return parsed_data;
+    }
+
+    function sendReferralOnUserSignUp() {
+        var cj_event_data = getCJEventCookie();
+        if (cj_event_data && cj_event_data.cjevent) {
+            return sendBeacon(cj_event_data).then(function () {
+                return recordAffiliateReferral(cj_event_data);
+            });
+        } else {
+            var deferred = $.Deferred();
+            deferred.resolve();
+            return deferred.promise();
+        }
+    }
+
+    window.__store_referral_on_user_sign_up = sendReferralOnUserSignUp;
+
+    /* HELPERS, 3RD PARTY */
+    /*
+    Query parsing from stackoverflow:
+    https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+    */
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    /*
+    Cookie code from stack overflow:
+    https://stackoverflow.com/questions/14573223/set-cookie-and-get-cookie-with-javascript
+    */
+    function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {   
+        document.cookie = name+'=; Max-Age=-99999999;';  
+    }
+
+})();
+
+    </script>
+
+</head>
+
+<body>
+    <script type="application/json" id="contentful-page-listings">[{"area_used": "site navbar header", "pages": [{"slug": "photo-video-maker/", "page_title": "Free Online Photo Video Maker | Lumen5 ", "link_text": "Photo Video Maker", "description": "We will help you make videos out of your photos. It's so simple, you will be surprised!", "image": {"title": "Photo Video Maker - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-upload-media", "file": {"url": "//images.ctfassets.net/5ltrds677kah/7yAtNk1DWIdbQSymFAxn5L/b1258c42e961271764b6a7fa01d5d00c/1.png", "details": {"size": 494903, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "7J6XDEVb0PsAFqmT8Mp2zq"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3keTEflvKVBY1zTYGR5N4u"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4gjGWCKdoqcph2rejA8WRy"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3RijOseWPM8ej9ErvgWqNR"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3Q73M60eG43x6vu7uVSU2J"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5G3yqe1KmjqcZk3HippxcC"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "structured_data": {"this": "and that"}, "_content_type": "page", "id": "3PsdYA8uAEAPuJuLEDmJ7H"}, {"slug": "facebook-video-maker/", "page_title": "Facebook Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Facebook Video Maker", "description": "Engage your audience and grow your brand. Create Facebook videos in minutes with the Lumen5 Facebook Video Maker.", "image": {"title": "Facebook Video Maker - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-facebook-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/3RHLOMZEEWhSSz35ySWB59/cb885f32af76dcb36dfa8cc27ba8293e/1.png", "details": {"size": 356537, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "5es7wZGjfasmZp90C7kWDt"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6Amfb6DjRCtWRZFUdYLvUZ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6yLFpLN8gJ6SMNAbjO01Jg"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3HT4EPNH4kkX4ux2aUJhHo"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "44q0qoFDlNjTQyUG1CKYYr"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "h1juP3E1g10Q5MxvSROhT"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "2ydcW0fNL0Cvl32Et5XHni"}, {"slug": "youtube-intro-maker/", "page_title": "Free Online YouTube Intro Maker | Lumen5", "link_text": "YouTube Intro Maker", "description": "Easily and quickly create YouTube intro videos. No video editing experience required. Sign up today. ", "image": {"title": "YouTube Intro Maker - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-youtube-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/7nYAHoPYjTId8Jo8ZfWfMU/eddb948560b0cd73256a9e3041389ea6/1.png", "details": {"size": 388995, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "51XSV7nkPdJ0xsMZbyDQ5A"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2ZKz0HWVPRKcgmo0oFD8I0"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "8sugHInEZXSbT8vsr4Ajy"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5Vr9XyWJzNg23h0V8cApv4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2hfL7jzKG5aZjMY62XmXIb"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2qZIzbUKCOr9jACNJlRbYa"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "7mKnzDNye0zHDj6iJ8FmOd"}, {"slug": "instagram-video-maker/", "page_title": "Instagram Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Instagram Video Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Instagram Video Maker - Hero - Product Screenshot", "description": "lumen5-laptop-product-screenshot-choose-a-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/1q52S4rVf8SngJEuhhG2wN/252f5c770368819ceb13d39164dc840c/1.png", "details": {"size": 235042, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "2ennvGk7cJpeXf8MCHADKk"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5TqyuwQkUdfQAm2Qn5lcF7"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2h77LTBA7o8AzBxxEEyH4Z"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "36H6hjGOSJgBMFn9PNZNEN"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4GX9aXrsUhDP1Hty2RGTRU"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7JaOzECmCzgR35dgp7xAam"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "3qDG9X3bQwoyPwmi2e3Et9"}, {"slug": "instagram-story-maker/", "page_title": "Instagram Story Maker | Create Videos in Minutes | Lumen5", "link_text": "Instagram Story Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Instagram Story Maker - Hero - Screenshot", "description": "lumen5-laptop-instagram-story-product-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/26t5BrsxlDEYcpvUHvKk6J/f726461db56ee6fc9c0fc1a45b319738/1.png", "details": {"size": 250885, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "2PPzQIPpWRGoSXRec9QXe4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4Kx7oW1vhSHijmGcqFqKXs"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5LcD6kssmApA3tnrKe5u9F"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7aXIPSOAmYKMMrxB6Z2317"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "21mKO0B1dD53geh3M7Y2dG"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3U90CZ6MRkze6qOC8A1z1d"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "5YAnqYy5fZ4e8mL2c0pBDX"}, {"slug": "promo-video-maker/", "page_title": "Promo Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Promo Video Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Promo Video Maker - Hero - Screenshot", "description": "lumen5-laptop-preview-video-promotional-discount-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/23cO2XUkkTD1pFEGIpL2eB/fd7bd83e5949f2a0599c2efb4d81a82b/1.png", "details": {"size": 251195, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "3ZawAg0dATzHvaVOj3OYyQ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1PzgAqnpO5JMa6XG2Sxll8"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1vb2gHb56D558LdS1F83sJ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7enTbLuFwHKWXW7CaNNmjG"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3CmMnIIDWpXK2s29vDECor"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "pmCNayDxJEg1LOC0knAXF"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "1A7tdKqrCQSkfaUzX8Pl4X"}, {"slug": "video-ad-maker/", "page_title": "Video Ad Maker | Create Videos in Minutes | Lumen5", "link_text": "Video Ad Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Video Ad Maker - Hero - Screenshot", "description": "lumen5-laptop-ad-product-layout-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/2iatFyPTzSsvflZdTguRW6/fa360d1789bec6ca340ba905ef2d297d/1.png", "details": {"size": 409306, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "3ud922sGVEC1k6CR4Scu2Y"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5KO08au6tY0ijE6EjJ6Ofj"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5NayLcBV70U9zGOziG2Qzo"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7aA7gSbqC3LKj4Wvq0WhMH"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "27jdcyMdPiCKLXrgdUIyCq"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2GRTjGpBt20jPw8BLPp62x"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "1EeHiqgEHcMXv8xV4OaYl3"}, {"slug": "marketing-video", "page_title": "Marketing Video Maker | Online Video Software | Lumen5", "link_text": "Marketing Video Maker", "description": "Engage your audience and drive business growth with professional video marketing content. Fast, simple, and secure. Sign up for free today.", "image": {"title": "Marketing Video Maker - Hero - Screenshot", "description": "lumen5-laptop-instagram-story-sports-video-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/6v2APNCyDmX5VY0VLE0t9h/baf4c4644e8edd26015767f753e6f023/1.png", "details": {"size": 281732, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "1wLqudhkbsgEoSs9Kezsov"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "XeDdwfyzZ4yGmSO51TUxF"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4uzDek3j9xAjeLnt6JrJTW"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6L5k5tYj6iwku49IyW38nE"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "12duwWsuIbaCXM43GNKG6W"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1K9mVbKUf9DVxXGIs2h6Tp"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "7e349TwIDy5luzTiMzW04y"}, {"slug": "linkedin-video/", "page_title": "LinkedIn Video Maker | Create Video in Minutes | Lumen5", "link_text": "LinkedIn Video Maker", "description": "Get your content seen by the right people. Create engaging video content for your network and grow your business. Sign up today for free.", "image": {"title": "LinkedIn Video Maker - Hero - Screenshot", "description": "lumen5-laptop-linkedin-video-computer-coffee-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/4VcpNd1YkNwaf2TC71XBLO/12550ae824779dc8a5314771666ebb78/1.png", "details": {"size": 389705, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "5QQrhIczw1ZAMkJxdVdBSp"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1mq6pSp8uiZwdMON4mjYYB"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4NLJoiRhaDxCJrHEa8zkA0"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3GgSiGKcjYgi73cD7xpjA6"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "33fTCVXkhNpoWHiVfnm2s3"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "662LSkurFaRBfXuKURNMHe"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "2hAShOYIAHco0WgezGOf61"}, {"slug": "business-video-maker/", "page_title": "Business Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Business Video Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Business Video Maker - Hero - Screenshot", "description": "lumen5-laptop-instagram-story-product-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/2UrpbhdDhXWrHmm2DvWP3n/10606d432b14f689648fe454009d6239/1.png", "details": {"size": 382698, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "5f8Hyiti37pblBX4uaIKyh"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2MotGOymuv99fR5pTGbsIC"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6PlCOOhdvaiBe2M4KbISDe"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7yvy6SOyoQtoH5nuYoBF3h"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5VxKik6dhJHxjNyrTsjWvO"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "75Yu1jYzQmPZHlna4wV1XU"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "1w1oUQMTM0Ob9l0KBuAGHg"}, {"slug": "ecommerce-video/", "page_title": "Ecommerce Video Maker | Create Product Videos | Lumen5", "link_text": "Ecommerce Video Maker", "description": "Grow your business with our free ecommerce video maker. Create videos that showcase your products in minutes. Fast, simple, and secure. Sign up today.", "image": {"title": "Ecommerce Video Maker - Hero - Screenshot", "description": "lumen5-laptop-shoe-ecommerce-video-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/7K3MMxnsZggTEu0F3Vdbar/f58109b6c4794ceee2133b10ee646379/1.png", "details": {"size": 311548, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "55HEVSX2yAGxLm0hQGJeXl"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4L7WcyapUwnaOrwBwywpZB"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7rhNjOPhVf3tyL6zxd0Bx9"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7zChipc1CAfH3zsxMp5byH"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3JTc5LFrP3TYqaOh3QTi1L"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "Bxq65rjd7MefDy1eEXHtT"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "7u1drM9y5I20LeMNBj6l0N"}, {"slug": "explainer-videos/", "page_title": "Free Explainer Video Maker and Software | Lumen5", "link_text": "Explainer Video Maker", "description": "Create brand-boosting explainer videos using fast, secure online software. No video editing skills needed. Sign up today for free.\n", "image": {"title": "Explainer Video Maker - Hero - Screenshot", "description": "lumen5-laptop-theme-picker-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/1BpVD4DBO3VfD38vuADVgf/d4c1f4d459837ffe9a341f6b19ce92fb/1.png", "details": {"size": 292688, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "3nqTXHukWd3K5GXnouYlvF"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "45bhlHNUETiwQsI1qx6Zt9"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4Dx799ZTXNRCFymtDSuZF"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "55zJ97JBJKUrru2ctLwBVj"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7sPsIwKiy8w9kT7DH28X2V"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "14W8wluYNPNjNL7bVVupIG"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "5SoH2VycBFQVIHO2Om4cGj"}, {"slug": "slideshow-maker/", "page_title": "Slideshow Maker | Create Videos in Minutes | Lumen5", "link_text": "Slideshow Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Slideshow Maker - Hero - Screenshot", "description": "lumen5-laptop-slideshow-theme-candy-product-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/3HEwoWBrOskUOVIwBbhdLB/ac4690b53a3869c8dbe737dd077ae9cc/1.png", "details": {"size": 233907, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "4uFxv36yJuSEAUDCzOXoTH"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "50kZvnTmQ55FujFYmD8ipw"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "71de0K4HuSspkU90JfegeP"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1YiVKV1yuJQMRR1qXpkmqn"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4XW8RuvZMTnEMvbYYdQVsp"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7f0iPtXJHaFP6D1CcCKYw9"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "2hAz1dhEnmtwGdALC74Bmi"}, {"slug": "education-video/", "page_title": "Education Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Education Video Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Education Video Maker - Hero - Screenshot", "description": "lumen5-laptop-blueberry-smoothie-how-to-video-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/3tJB985kIOKndxbSvo6mQK/3db832a59d862bca28b29f273b3a0fd5/1.png", "details": {"size": 476645, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "4SNGdUcoqIqKwX9Xmh1q4W"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3e2m6JOUKXByHO6OHw62br"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5LUIjqjuvhpGc0jDn13Et4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fVJJYULVHOgkW5CgR9rFd"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1hb4UrykNarLyB0HLXjz1p"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5oKwxSx890qYNkxBhkKHmZ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "mZDo1louErZGBshtwy7kO"}, {"slug": "video-editor/", "page_title": "Video Editor | Edit Videos Quickly & Easily | Lumen5", "link_text": "Video Editor", "description": "Create and edit thumb-stopping Instagram videos with our professional video editor. No editing experience required. Edit videos quickly and easily. Sign up today for free.", "image": {"title": "Video Editor - Hero - Screenshot", "description": "lumen5-laptop-dog-theme-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/1TlOTdlUVMQgp9G1TVXAFs/c80caf20df29aabd25d5692253767953/1.png", "details": {"size": 394736, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "7DZwYJodd1th6thjjQZD61"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3BJvAoTl95e4TVzsUWCoum"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "12ASySp1pZKw2ZPLjGjtYP"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4rzf3mil6YL6rPLJBTUWGh"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5xPDmBIDRXbks9ehiuwma4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2lHZUR7Uk8qCjXDgdMFDF4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4kaHvlu90fRK0lp4bG1fWt"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2NJmL2NQIgnFg7udfOf2YD"}}], "_content_type": "page", "id": "9UHNk0vnpr9r4guGhbhYw"}, {"slug": "voiceover/", "page_title": "Online Voiceover | Edit Videos in Minutes | Lumen5", "link_text": "Voiceover", "description": "Record your voice and add it to your video. Use voiceover to make your videos unique and help your brand stand out.", "image": {"title": "Voiceover Video - Hero - Screenshot", "description": "lumen5-laptop-recording-voiceover-product-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/952YcnPYM4TGtEF4XIGFc/a54e7dfd761f44cf6676310091d26dca/1.png", "details": {"size": 254217, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "1D67UmvZxcumoe8xsRcuMm"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2ySMCC8l9apD4AFjgtyE6L"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2IKY6EvQZNKSSlI8WZymGf"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "39NDqha2NYL4Hgn2LLy1va"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2rulvmt9cCr3665cCq83be"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "I190e8SJRS0IggCcAMKEY"}], "_content_type": "pageListingComponent", "id": "5UuKQ0qX3GV750pg0pUgcB"}, {"area_used": "tools footer", "pages": [{"slug": "tools/add-text-to-video", "page_title": "Add Text to Video | Online Video Software | Lumen5", "link_text": "Add Text to Video", "description": "Need to add text to video, GIFs, or images? We\u2019ve got you covered. Lumen5 is secure, quick, and easy to use.", "image": {"title": "Add Text to Video - Hero - Screenshot", "description": "lumen5-laptop-add-text-to-video-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/3Vq8oPnMyLUsp8JKtihp2z/99fdb6910e425a6c107f92f2face02cd/1.png", "details": {"size": 316902, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "5QNeRtG73CzbLxiPdpgWnb"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "cKgseqFm1QoYJuCWt5Cic"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1NQ7LeqltPXvfw0Eqxl8wA"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2x58KyyKEPjAlUAAwMTam1"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3kNpg44l8vd1cOcGxYjDUe"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2BatOA1nrbJVMKWXt3MQC9"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "1FIGMCZUKJdBCdtBhTR5kc"}, {"slug": "tools/cut-video", "page_title": "Cut Video | Online Video Cutter | Lumen5", "link_text": "Cut Video", "description": "Cut and edit your video quickly and simply with our handy tool. Using an online video cutter has never been easier.", "image": {"title": "Cut Video - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-sunflower-video-trimmer", "file": {"url": "//images.ctfassets.net/5ltrds677kah/7cNSz3a7kF9QSQS8Ecis8N/23d0968cc0a01b5a3ad5f6c2763f540a/1.png", "details": {"size": 301882, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "3KF4iWUC3MR3nhasdS2NT9"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6u1k93NzSXiUs9VB6PvlTb"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2izpbALBGrA6Mt9TFd9rg2"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3bPcBTkSCdfp3xtr1zH4FT"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "77W3gf6rVJMoUNgiwfMOKr"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6uu80SCDnMmiYQC65tpRlP"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "6pg42Px0xreCXbiHpqNYn3"}, {"slug": "tools/merge-video", "page_title": "Merge Video Online | Combine Video Clips | Lumen5", "link_text": "Merge Video", "description": "Combine multiple clips into one. It\u2019s easy to upload multiple videos or images and combine them all with one click.", "image": {"title": "Merge Video - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-merge-two-videos", "file": {"url": "//images.ctfassets.net/5ltrds677kah/6PQF3SusYGRz0ywoKTi2cL/bf5521803ef0f1ea7e20f0c9a8f02f8f/1.png", "details": {"size": 567700, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "2mbdBolasXeKoAoKnUyObz"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5l3RgPqCujK4FfP5iuyiKn"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6a1SDBIQUC04WdZsw7FFzv"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "Dot2zskNWn7WqfZjlZAJJ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1nkTRubsm1dcoaYgmcJywn"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4ZopxD5Z9WIudb5WE5NAKX"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "4hwK6OSd6UB8atd7AgW5AI"}, {"slug": "tools/compress-video/", "page_title": "Compress Video | Online Video Compressor | Lumen5", "link_text": "Compress Video", "description": "Make your video smaller without losing quality. Quick, easy-to-use, and intuitive, compress your video in minutes.", "image": {"title": "Compress Video - Hero - Product Screenshot", "description": "lumen5-laptop-product-screenshot-choose-a-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/6xm5KwmOnnmPnsXJLjypEB/b8be0ab54b1a32c4d8790b070edccfee/1.png", "details": {"size": 209497, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "54deVdZZ2VwjnQcP6oFD9e"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6NNaYoXoKkO43633MEtR5E"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3RpQVc9kbBDTTyGpc7hVUU"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6KZWLIriqcjcy1vg3eTUBZ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3BGzDjdHQiUvTIAYEu11Pm"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4QtbNY0ynXeajp6OseL7EZ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "7AFJMgQf6L5yY6qnNN33Ml"}, {"slug": "tools/resize-video/", "page_title": "Resize Video | Online Video Resizer | Lumen5", "link_text": "Resize Video", "description": "Resize and edit video content. No video editing experience needed, Lumen5 does the heavy-lifting for you.", "image": {"title": "Resize Video - Hero - Product Screenshot", "description": "lumen5-laptop-product-screenshot-choose-a-format-instagram-story", "file": {"url": "//images.ctfassets.net/5ltrds677kah/iTAiaycBnwRsqQUHuwJje/477cd5fbfdb0dd4a10c38c22c595a1f1/1.png", "details": {"size": 322462, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "LJOSlXjHERonnWtrvajZv"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6ShX2KfPq0m6RJ9i3lKDl3"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6LndbIZQ8NZm39s7bx2rdb"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "1bYQdYc6yra3mm0BcKj9jR"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4eMdrQQnsy7MeF9hUUjwJ6"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2IWXBLkskOhSjwMkpZb3D3"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "3kC6abZIqfQl9UOxxJ7mv4"}], "_content_type": "pageListingComponent", "id": "3hO3xEiyDMIzXH4ZLoyM8X"}, {"area_used": "video creators footer", "pages": [{"slug": "video-editor/", "page_title": "Video Editor | Edit Videos Quickly & Easily | Lumen5", "link_text": "Video Editor", "description": "Create and edit thumb-stopping Instagram videos with our professional video editor. No editing experience required. Edit videos quickly and easily. Sign up today for free.", "image": {"title": "Video Editor - Hero - Screenshot", "description": "lumen5-laptop-dog-theme-screenshot", "file": {"url": "//images.ctfassets.net/5ltrds677kah/1TlOTdlUVMQgp9G1TVXAFs/c80caf20df29aabd25d5692253767953/1.png", "details": {"size": 394736, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "7DZwYJodd1th6thjjQZD61"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3BJvAoTl95e4TVzsUWCoum"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "12ASySp1pZKw2ZPLjGjtYP"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4rzf3mil6YL6rPLJBTUWGh"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5xPDmBIDRXbks9ehiuwma4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2lHZUR7Uk8qCjXDgdMFDF4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4kaHvlu90fRK0lp4bG1fWt"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2NJmL2NQIgnFg7udfOf2YD"}}], "_content_type": "page", "id": "9UHNk0vnpr9r4guGhbhYw"}, {"slug": "photo-video-maker/", "page_title": "Free Online Photo Video Maker | Lumen5 ", "link_text": "Photo Video Maker", "description": "We will help you make videos out of your photos. It's so simple, you will be surprised!", "image": {"title": "Photo Video Maker - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-upload-media", "file": {"url": "//images.ctfassets.net/5ltrds677kah/7yAtNk1DWIdbQSymFAxn5L/b1258c42e961271764b6a7fa01d5d00c/1.png", "details": {"size": 494903, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "7J6XDEVb0PsAFqmT8Mp2zq"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3keTEflvKVBY1zTYGR5N4u"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4gjGWCKdoqcph2rejA8WRy"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3RijOseWPM8ej9ErvgWqNR"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3Q73M60eG43x6vu7uVSU2J"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5G3yqe1KmjqcZk3HippxcC"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "structured_data": {"this": "and that"}, "_content_type": "page", "id": "3PsdYA8uAEAPuJuLEDmJ7H"}, {"slug": "facebook-video-maker/", "page_title": "Facebook Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Facebook Video Maker", "description": "Engage your audience and grow your brand. Create Facebook videos in minutes with the Lumen5 Facebook Video Maker.", "image": {"title": "Facebook Video Maker - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-facebook-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/3RHLOMZEEWhSSz35ySWB59/cb885f32af76dcb36dfa8cc27ba8293e/1.png", "details": {"size": 356537, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "5es7wZGjfasmZp90C7kWDt"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6Amfb6DjRCtWRZFUdYLvUZ"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "6yLFpLN8gJ6SMNAbjO01Jg"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "3HT4EPNH4kkX4ux2aUJhHo"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "44q0qoFDlNjTQyUG1CKYYr"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "h1juP3E1g10Q5MxvSROhT"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "2ydcW0fNL0Cvl32Et5XHni"}, {"slug": "youtube-intro-maker/", "page_title": "Free Online YouTube Intro Maker | Lumen5", "link_text": "YouTube Intro Maker", "description": "Easily and quickly create YouTube intro videos. No video editing experience required. Sign up today. ", "image": {"title": "YouTube Intro Maker - Hero - Product Screenshot", "description": "lumen5-laptop-screenshot-youtube-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/7nYAHoPYjTId8Jo8ZfWfMU/eddb948560b0cd73256a9e3041389ea6/1.png", "details": {"size": 388995, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "51XSV7nkPdJ0xsMZbyDQ5A"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2ZKz0HWVPRKcgmo0oFD8I0"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "8sugHInEZXSbT8vsr4Ajy"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5Vr9XyWJzNg23h0V8cApv4"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2hfL7jzKG5aZjMY62XmXIb"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2qZIzbUKCOr9jACNJlRbYa"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "7mKnzDNye0zHDj6iJ8FmOd"}, {"slug": "instagram-video-maker/", "page_title": "Instagram Video Maker | Create Videos in Minutes | Lumen5", "link_text": "Instagram Video Maker", "description": "Create thumb-stopping Instagram videos with our professional video maker. No editing experience required. Sign up today for free.", "image": {"title": "Instagram Video Maker - Hero - Product Screenshot", "description": "lumen5-laptop-product-screenshot-choose-a-format", "file": {"url": "//images.ctfassets.net/5ltrds677kah/1q52S4rVf8SngJEuhhG2wN/252f5c770368819ceb13d39164dc840c/1.png", "details": {"size": 235042, "image": {"width": 1200, "height": 800}}, "fileName": "1.png", "contentType": "image/png"}}, "content_components": [{"sys": {"type": "Link", "linkType": "Entry", "id": "2ennvGk7cJpeXf8MCHADKk"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "5TqyuwQkUdfQAm2Qn5lcF7"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2h77LTBA7o8AzBxxEEyH4Z"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "36H6hjGOSJgBMFn9PNZNEN"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "4GX9aXrsUhDP1Hty2RGTRU"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "7JaOzECmCzgR35dgp7xAam"}}, {"sys": {"type": "Link", "linkType": "Entry", "id": "2fMbvg8ksu68AfCFPNZhX1"}}], "_content_type": "page", "id": "3qDG9X3bQwoyPwmi2e3Et9"}], "_content_type": "pageListingComponent", "id": "2Bkqdf2xmIh2yyCvj4TDtV"}]</script>
+
+    
+    <div id="react-root"></div>
+
+
+    
+    <script src="https://storage.googleapis.com/lumen5-built-js/runtime-2d64f6897bfba7464bb4.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.lodash-572d6e20be92f5a0c5e3.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.promjs-89e8dbe32c20a08339a5.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.ua-parser-js-2e45d0d14b2ad96e4fb7.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.jquery-2f774b0d343bc8ec9daf.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.react-dom-8531b748b23f284abb35.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.bugsnag-6004bbf1ec2656fde20a.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.core-js-a77bcf6ecc9e96c93ead.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.react-bootstrap-b964ea5547277c85c0c8.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.regenerator-runtime-993ecb8d29191ea41f60.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.react-redux-b03d95fd7f23129b0689.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.redux-8cf5a72967fc2347b44a.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.bootstrap-970a95c26ca333e1a7f8.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.popper.js-962421058b07e5ecc59d.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.react-overlays-857aa8bf6cf8387c4d45.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/npm.react-transition-group-434a852d50eb3e886f0a.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/1705-733b8d64b6a719807bb4.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/5663-1225af112f02049ac824.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/5109-37b944f12bc0a2fcb118.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/6338-437a8c1c066a748ce9d0.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/7954-39a6f38be34121483c32.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/4266-e42045107561f922e18c.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/8133-f017efd11a9b6327bde5.js" crossorigin></script>
+<script src="https://storage.googleapis.com/lumen5-built-js/home-page-00bd5aeec171a4d9272b.js" crossorigin></script>
+
+
+
+    <div style="display: none">
+        <a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
+    </div>
+
+    <!-- Baremetrics -->
+    <!-- Include this wherever you'd like the Barepay code to generate -->
+<barepay></barepay>
+
+    <!-- Include this before the closing `body` tag -->
+    <script>
+        !function(){if(window.barepay&&window.barepay.created)window.console&&console.error&&console.error("Barepay snippet included twice.");else{window.barepay={created:!0};var a=document.createElement("script");a.src="https://baremetrics-dunning.baremetrics.com/js/application.js",a.async=!0;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b),
+        window.barepay.params = {
+          access_token_id: "f0d8988c-b56a-4857-8272-9ef715823a3e", // Your Recover API public key
+        }
+        if (SERVER.USER != null && SERVER.USER.stripe_id) {
+          // Customer ID whose card you're looking to update
+          window.barepay.params.customer_oid = SERVER.USER.stripe_id.toString();
+        }
+        }}();
+    </script>
+
+
+</body>
+</html>
